@@ -1,0 +1,346 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>英子简历</title>
+    <style>
+        .y{
+         width:150px;
+         height: 200px;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            padding: 100px 6%;
+            background: linear-gradient(to right top, #ff1493, #2980b9);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .profile {
+            padding: 20px 30px;
+            height: 230px;
+            background: #FFFFFF;
+            text-align: center;
+            flex: 1 1 400px;
+            position: sticky;
+            top: 20px;
+            border-right: 2px solid #333333;
+        }
+
+        .profile h3 {
+            font-size: 20px;
+        }
+
+        .profile p {
+            color: #2980b9;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .btn {
+            padding: 7px 20px;
+            border-radius: 5px;
+            background: #2980b9;
+            color: #FFFFFF;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #333333;
+        }
+
+        .information {
+            padding: 20px 30px;
+            flex: 1 1 1000px;
+            background: #FFFFFF; 
+        }
+
+        .title {
+            font-size: 25px;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            font-size: 17px;
+            line-height: 2;
+            padding-bottom: 10px;
+            color: #777777;
+        }
+
+        .about .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .about .box-container .box {
+            flex: 1 1 250px;
+        }
+
+        .about .box-container .box h3 {
+            font-size: 15px;
+            padding: 10px 0;
+            color: #333333;
+        }
+
+        .about .box-container .box h3 span {
+            color: #777777;
+        }
+
+        .services {
+            padding: 20px 0;
+        }
+
+        .imgbox-container {
+            display: flex;
+        }
+
+        .imgbox-container .box {
+            flex: 1 1 17px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 20px;
+            background: #eeeeee;
+            margin-right: 10px;
+        }
+
+        .imgbox-container .box h3 {
+            font-size: 16px;
+            color: #777777;
+        }
+
+        .skills .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills .box-container .box {
+            flex: 1 1 300px;
+        }
+
+        .skills .box-container .box:last-child {
+            margin-left: 12px;
+        }
+
+        .progress h3 {
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            color: #333333;
+            font-size: 15px;
+        }
+
+        .progress h3 span {
+            color: #777777;
+        }
+
+        .bar {
+            overflow: hidden;
+            border-radius: 50px;
+            height: 10px;
+            background: #eeeeee;
+        }
+
+        .bar span {
+            background: #2980b9;
+            height: 100%;
+            display: block;
+            border-radius: 50px;
+        }
+
+        .first {
+            width: 95%;
+        }
+
+        .second {
+            width: 80%;
+        }
+
+        .third {
+            width: 65%;
+        }
+
+        .fourth {
+            width: 70%;
+        }
+
+        .fifth {
+            width: 90%;
+        }
+
+        .sixth {
+            width: 75%;
+        }
+
+        .experience {
+            margin: 20px 0;
+        }
+
+        .experience .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .experience .box-container .box {
+            padding: 20px;
+            border-radius: 5px;
+            flex: 1 1 350px;
+            background: #eeeeee;
+        }
+
+        .experience .box-container .box span {
+            color: #2980b9;
+            font-size: 15px;
+        }
+
+        .experience .box-container .box h3 {
+            color: #333333;
+            font-size: 17px;
+            padding: 5px 0;
+        }
+
+        .experience .box-container .box p {
+            color: #777777;
+            line-height: 2;
+            font-size: 13px;
+        }
+
+        .contact .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contact .box-container .box {
+            flex: 1 1 200px;
+            display: flex;
+        }
+
+        .contact .box-container .box i {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            border-radius: 50%;
+            background: #2980b9;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 14px;
+        }
+
+        .contact .box-container .box h3 {
+            font-size: 17px;
+            color: #333333;
+            padding-bottom: 5px;
+        }
+
+        .contact .box-container .box p {
+            font-size: 14px;
+            color: #777777;
+            line-height: 2;
+        }
+
+        .info {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="profile">
+            <img  class="y" src="英.jpg" alt="">
+            <h3>周英杰</h3>
+            <p>海王一枚</p>
+            <div class="buttons">
+                <a class="btn" href="英.jpg" target="_blank">下载照片</a>
+                <a class="btn" href="javascript:alert('发送成功');">发送约会邀请</a>
+            </div>
+        </div>
+
+        <div class="information">
+
+            <div class="about">
+                <h3 class="title">About Me</h3>
+                <p>我叫周英杰，小名周林，擅长天津话儿，精通撩妹，海王，渣女等领域。</p>
+                <p></p>
+                <div class="box-container">
+                    <div class="box">
+                        <h3><span>年龄 : </span>18</h3>
+                        <h3><span>地址 : </span>北京海淀</h3>
+                        <h3><span>电话 : </span>18920063507</h3>
+                        <h3><span>邮箱 : </span>忘记了</h3>
+                    </div>
+                    <div class="box">
+                        <h3><span>求职 : </span>女朋友</h3>
+                        <h3><span>语言 : </span>中文，英语</h3>
+                        <h3><span>工龄 : </span>随时到岗</h3>
+                        <h3><span>现状 : </span>编不下去了</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services">
+                <h3 class="title">My Services</h3>
+                <div class="imgbox-container">
+                    <div class="box">
+                       <h3>牵手</h3>
+                    </div>
+                    <div class="box">
+                        <h3>拥抱</h3>
+                    </div>
+                    <div class="box">
+                       <h3>亲嘴</h3>
+                    </div>
+                    <div class="box">
+                        <h3>懒</h3>
+                    </div>
+                    <div class="box">
+                        <h3>得</h3>
+                    </div>
+                    <div class="box">
+                       <h3>编</h3>
+                    </div>
+                    <div class="box">
+                        <h3>了</h3>
+                    </div>
+                    
+                </div>
+            </div>
+
+           
+
+            <div class="contact">
+                <h3 class="title">Contact Info</h3>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fas fa-map"></i>
+                        <div class="info">
+                            <h3>微信</h3>
+                            <p>twt2693213029</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-phone"></i>
+                        <div class="info">
+                            <h3>My Number</h3>
+                            <p>18920063507</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
